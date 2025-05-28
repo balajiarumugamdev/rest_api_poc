@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "baseUrl": "./src",
+    "outDir": "dist",
+    "sourceMap": true,
+    "noImplicitAny": true
+  },
+  "include": ["./src/**/*"]
+}
+
+//module: "NodeNext" - Tells TypeScript to use ES module syntax (import/export)
+//baseUrl: "src" - Allows imports like import MyComponent from 'components/MyComponent' instead of relative imports like ../../components/MyComponent.
+//noImplicitAny: true - Raises an error if a variable’s type can’t be inferred and defaults to any.
+//include: ["src/**/*"] - Tells TypeScript to only compile files in src/ and all its subfolders. Matches all .ts, .tsx, etc. files under src.
